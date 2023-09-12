@@ -21,6 +21,12 @@ export default function App() {
       )
     );
   }
+  function handleClearList() {
+    const confirmed = window.confirm("are you sure you want to clear list?");
+    if (confirmed) {
+      setItems([]);
+    }
+  }
 
   return (
     <div className="app">
@@ -30,7 +36,7 @@ export default function App() {
         items={items}
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
-        // onClearList={handleClearList}
+        onClearList={handleClearList}
       />
       <Footer items={items} />
     </div>

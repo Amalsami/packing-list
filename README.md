@@ -9,6 +9,7 @@ It consists of five main components: Logo, Form, Packing List,item and Footer.
 - Add items to the list with item names and quantities.
 - Check whether an item has been packed or not.
 - Update and delete items from the list.
+- Delete all items from the list.
 - View the total number of items you've added, the number of items packed, and the percentage of items packed.
 
 ## Technologies Used
