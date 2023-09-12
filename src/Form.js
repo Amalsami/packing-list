@@ -12,7 +12,6 @@ export default function Form({ onAddItems }) {
     const newItem = { description, quantity, packed: false, id: Date.now() };
 
     onAddItems(newItem);
-    console.log(newItem);
 
     setDescription("");
     setQuantity(1);
@@ -25,7 +24,7 @@ export default function Form({ onAddItems }) {
         value={quantity}
         onChange={(e) => setQuantity(Number(e.target.value))}
       >
-        {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+        {Array.from({ length: 15 }, (_, i) => i + 1).map((num) => (
           <option value={num} key={num}>
             {num}
           </option>

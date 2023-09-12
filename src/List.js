@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Item from "./Item";
 
-export default function List({ items, onDeleteItem }) {
+export default function List({ items, onDeleteItem, onToggleItem }) {
   return (
     <div className="list">
       <ul>
@@ -9,7 +9,7 @@ export default function List({ items, onDeleteItem }) {
           <Item
             item={item}
             onDeleteItem={onDeleteItem}
-            // onToggleItem={onToggleItem}
+            onToggleItem={onToggleItem}
             key={item.id}
           />
         ))}
